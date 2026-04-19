@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fast-slow</title>
+    <style>
+        html, body { margin: 0; padding: 0; background: #111; height: 100%; }
+        body { display: flex; align-items: center; justify-content: center; }
+        canvas { display: block; }
+        #hud {
+            position: fixed; top: 12px; left: 12px;
+            color: #ddd; font-family: monospace; font-size: 14px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="hud">WASD move · SPACE attack · SHIFT dodge · R restart</div>
+    <script src="https://unpkg.com/kaplay@3001/dist/kaplay.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
